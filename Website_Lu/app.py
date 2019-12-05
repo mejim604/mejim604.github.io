@@ -1,11 +1,11 @@
 from flask import Flask, render_template #bring in a website creator called flask
-import flask 
+import flask
 
 app = Flask(__name__) #create an instance of it to use. Always in a flask app. 
 
 @app.route('/') #add after url
 def home():
-    return render_template('home.html')
+    return render_template('index.html')
 
 @app.route('/contact')
 def contact_me():
